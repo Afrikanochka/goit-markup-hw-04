@@ -414,7 +414,7 @@ img {
   background-color: #2f303a;
 }
 .left-side {
-  padding-left: 215px;
+  display: flex;
 }
 .right-side {
   margin-left: 70px;
