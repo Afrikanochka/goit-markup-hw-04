@@ -408,13 +408,11 @@ img {
 /* Footer */
 .footer {
   display: flex;
-  max-width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
 }
 .left-side {
-  display: flex;
 }
 .right-side {
   margin-left: 70px;
