@@ -181,13 +181,21 @@ img {
 .feature-item {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
+  text-align: center;
 }
-.icon-feature {
+.feature-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
-  margin-bottom: 30px;
   border-radius: 4px;
+  margin-bottom: 30px;
   background-color: var(--secondary-bg-color);
+}
+.icon-feature {
+  width: 70px;
+  height: 70px;
 }
 .feature-title {
   font-weight: 700;
@@ -246,6 +254,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--primary-text-color);
   margin-bottom: 4px;
 }
 .work-list .text {
@@ -255,6 +264,9 @@ img {
   color: var(--secondary-text-color);
 }
 /* User */
+.user-section {
+  background-color: #f5f4fa;
+}
 .user {
   display: flex;
   justify-content: center;
@@ -263,6 +275,7 @@ img {
 .user-item {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
+  text-align: center;
 }
 .user-avatar {
   padding-top: 30px;
@@ -281,7 +294,6 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 .user-text {
@@ -290,13 +302,9 @@ img {
   color: var(--secondary-text-color);
 }
 .user-list {
-  display: flex;
-  padding-left: 32px;
-  padding-right: 32px;
+  display: inline-flex;
 }
-.user-list-item {
-  width: 44px;
-  height: 44px;
+.user-list-item:not(:last-child) {
   margin-right: 10px;
 }
 .user-list-item-link {
@@ -304,8 +312,8 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  width: 100%;
-  height: 100%;
+  width: 44px;
+  height: 44px;
 }
 .user-list-item-link:hover .icon,
 .user-list-item-link:focus .icon,
